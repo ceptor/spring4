@@ -45,7 +45,7 @@ public class MessageSupportFactory {
     public MessageSupportFactory() {
         properties = new Properties();
         try {
-            properties.load(new FileInputStream("C:\\projects\\github\\spring4\\spring4-app\\src\\main\\resources\\msf.properties"));
+            properties.load(new FileInputStream("src/main/resources/msf.properties"));
             String renderClass = properties.getProperty("render.class");
             String providerClass = properties.getProperty("provider.class");
 
